@@ -81,7 +81,7 @@ class DefaultRequestDispatcher implements RequestDispatcher {
   private final ListeningExecutorService executorService;
   private final String user;
 
-  public DefaultRequestDispatcher(final Supplier<List<Endpoint>> endpointSupplier,
+  DefaultRequestDispatcher(final Supplier<List<Endpoint>> endpointSupplier,
                                   final String user,
                                   final ListeningExecutorService executorService) {
     endpointIterator = EndpointIterator.of(endpointSupplier.get());
